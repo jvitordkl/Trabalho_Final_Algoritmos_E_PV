@@ -33,8 +33,19 @@
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btVotar = new System.Windows.Forms.Button();
-            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.lb_Numero = new System.Windows.Forms.Label();
+            this.bt_Number_1 = new System.Windows.Forms.Button();
+            this.bt_Number_2 = new System.Windows.Forms.Button();
+            this.bt_Number_3 = new System.Windows.Forms.Button();
+            this.bt_Number_6 = new System.Windows.Forms.Button();
+            this.bt_Number_5 = new System.Windows.Forms.Button();
+            this.bt_Number_4 = new System.Windows.Forms.Button();
+            this.bt_Number_9 = new System.Windows.Forms.Button();
+            this.bt_Number_8 = new System.Windows.Forms.Button();
+            this.bt_Number_7 = new System.Windows.Forms.Button();
+            this.bt_Votar = new System.Windows.Forms.Button();
+            this.bt_Number_0 = new System.Windows.Forms.Button();
+            this.bt_Apagar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,32 +90,159 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(574, 169);
+            this.label2.Location = new System.Drawing.Point(510, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 25);
+            this.label2.Size = new System.Drawing.Size(197, 46);
             this.label2.TabIndex = 2;
             this.label2.Text = "NUMERO";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btVotar
+            // lb_Numero
             // 
-            this.btVotar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVotar.Location = new System.Drawing.Point(563, 233);
-            this.btVotar.Name = "btVotar";
-            this.btVotar.Size = new System.Drawing.Size(123, 49);
-            this.btVotar.TabIndex = 3;
-            this.btVotar.Text = "VOTAR";
-            this.btVotar.UseVisualStyleBackColor = true;
-            this.btVotar.Click += new System.EventHandler(this.btVotar_Click);
+            this.lb_Numero.BackColor = System.Drawing.Color.White;
+            this.lb_Numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Numero.Location = new System.Drawing.Point(515, 99);
+            this.lb_Numero.Name = "lb_Numero";
+            this.lb_Numero.Size = new System.Drawing.Size(192, 31);
+            this.lb_Numero.TabIndex = 5;
+            this.lb_Numero.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtNumero
+            // bt_Number_1
             // 
-            this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(550, 197);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(152, 30);
-            this.txtNumero.TabIndex = 4;
+            this.bt_Number_1.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Number_1.Location = new System.Drawing.Point(516, 134);
+            this.bt_Number_1.Name = "bt_Number_1";
+            this.bt_Number_1.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_1.TabIndex = 6;
+            this.bt_Number_1.Text = "1";
+            this.bt_Number_1.UseVisualStyleBackColor = true;
+            this.bt_Number_1.Click += new System.EventHandler(this.bt_Number_1_Click);
+            // 
+            // bt_Number_2
+            // 
+            this.bt_Number_2.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_2.Location = new System.Drawing.Point(582, 134);
+            this.bt_Number_2.Name = "bt_Number_2";
+            this.bt_Number_2.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_2.TabIndex = 7;
+            this.bt_Number_2.Text = "2";
+            this.bt_Number_2.UseVisualStyleBackColor = true;
+            this.bt_Number_2.Click += new System.EventHandler(this.bt_Number_2_Click);
+            // 
+            // bt_Number_3
+            // 
+            this.bt_Number_3.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_3.Location = new System.Drawing.Point(648, 134);
+            this.bt_Number_3.Name = "bt_Number_3";
+            this.bt_Number_3.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_3.TabIndex = 8;
+            this.bt_Number_3.Text = "3";
+            this.bt_Number_3.UseVisualStyleBackColor = true;
+            this.bt_Number_3.Click += new System.EventHandler(this.bt_Number_3_Click);
+            // 
+            // bt_Number_6
+            // 
+            this.bt_Number_6.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_6.Location = new System.Drawing.Point(648, 200);
+            this.bt_Number_6.Name = "bt_Number_6";
+            this.bt_Number_6.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_6.TabIndex = 11;
+            this.bt_Number_6.Text = "6";
+            this.bt_Number_6.UseVisualStyleBackColor = true;
+            this.bt_Number_6.Click += new System.EventHandler(this.bt_Number_6_Click);
+            // 
+            // bt_Number_5
+            // 
+            this.bt_Number_5.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_5.Location = new System.Drawing.Point(582, 200);
+            this.bt_Number_5.Name = "bt_Number_5";
+            this.bt_Number_5.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_5.TabIndex = 10;
+            this.bt_Number_5.Text = "5";
+            this.bt_Number_5.UseVisualStyleBackColor = true;
+            this.bt_Number_5.Click += new System.EventHandler(this.bt_Number_5_Click);
+            // 
+            // bt_Number_4
+            // 
+            this.bt_Number_4.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_4.Location = new System.Drawing.Point(516, 200);
+            this.bt_Number_4.Name = "bt_Number_4";
+            this.bt_Number_4.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_4.TabIndex = 9;
+            this.bt_Number_4.Text = "4";
+            this.bt_Number_4.UseVisualStyleBackColor = true;
+            this.bt_Number_4.Click += new System.EventHandler(this.bt_Number_4_Click);
+            // 
+            // bt_Number_9
+            // 
+            this.bt_Number_9.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_9.Location = new System.Drawing.Point(648, 266);
+            this.bt_Number_9.Name = "bt_Number_9";
+            this.bt_Number_9.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_9.TabIndex = 14;
+            this.bt_Number_9.Text = "9";
+            this.bt_Number_9.UseVisualStyleBackColor = true;
+            this.bt_Number_9.Click += new System.EventHandler(this.bt_Number_9_Click);
+            // 
+            // bt_Number_8
+            // 
+            this.bt_Number_8.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_8.Location = new System.Drawing.Point(582, 266);
+            this.bt_Number_8.Name = "bt_Number_8";
+            this.bt_Number_8.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_8.TabIndex = 13;
+            this.bt_Number_8.Text = "8";
+            this.bt_Number_8.UseVisualStyleBackColor = true;
+            this.bt_Number_8.Click += new System.EventHandler(this.bt_Number_8_Click);
+            // 
+            // bt_Number_7
+            // 
+            this.bt_Number_7.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_7.Location = new System.Drawing.Point(516, 266);
+            this.bt_Number_7.Name = "bt_Number_7";
+            this.bt_Number_7.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_7.TabIndex = 12;
+            this.bt_Number_7.Text = "7";
+            this.bt_Number_7.UseVisualStyleBackColor = true;
+            this.bt_Number_7.Click += new System.EventHandler(this.bt_Number_7_Click);
+            // 
+            // bt_Votar
+            // 
+            this.bt_Votar.BackColor = System.Drawing.Color.Green;
+            this.bt_Votar.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Votar.ForeColor = System.Drawing.Color.White;
+            this.bt_Votar.Location = new System.Drawing.Point(648, 332);
+            this.bt_Votar.Name = "bt_Votar";
+            this.bt_Votar.Size = new System.Drawing.Size(60, 60);
+            this.bt_Votar.TabIndex = 17;
+            this.bt_Votar.Text = "V";
+            this.bt_Votar.UseVisualStyleBackColor = false;
+            this.bt_Votar.Click += new System.EventHandler(this.bt_Votar_Click);
+            // 
+            // bt_Number_0
+            // 
+            this.bt_Number_0.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Number_0.Location = new System.Drawing.Point(582, 332);
+            this.bt_Number_0.Name = "bt_Number_0";
+            this.bt_Number_0.Size = new System.Drawing.Size(60, 60);
+            this.bt_Number_0.TabIndex = 16;
+            this.bt_Number_0.Text = "0";
+            this.bt_Number_0.UseVisualStyleBackColor = true;
+            this.bt_Number_0.Click += new System.EventHandler(this.bt_Number_0_Click);
+            // 
+            // bt_Apagar
+            // 
+            this.bt_Apagar.BackColor = System.Drawing.Color.Red;
+            this.bt_Apagar.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F);
+            this.bt_Apagar.ForeColor = System.Drawing.Color.White;
+            this.bt_Apagar.Location = new System.Drawing.Point(516, 332);
+            this.bt_Apagar.Name = "bt_Apagar";
+            this.bt_Apagar.Size = new System.Drawing.Size(60, 60);
+            this.bt_Apagar.TabIndex = 15;
+            this.bt_Apagar.Text = "D";
+            this.bt_Apagar.UseVisualStyleBackColor = false;
+            this.bt_Apagar.Click += new System.EventHandler(this.bt_Apagar_Click);
             // 
             // Form_Votacao_Interativa
             // 
@@ -112,8 +250,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtNumero);
-            this.Controls.Add(this.btVotar);
+            this.Controls.Add(this.bt_Votar);
+            this.Controls.Add(this.bt_Number_0);
+            this.Controls.Add(this.bt_Apagar);
+            this.Controls.Add(this.bt_Number_9);
+            this.Controls.Add(this.bt_Number_8);
+            this.Controls.Add(this.bt_Number_7);
+            this.Controls.Add(this.bt_Number_6);
+            this.Controls.Add(this.bt_Number_5);
+            this.Controls.Add(this.bt_Number_4);
+            this.Controls.Add(this.bt_Number_3);
+            this.Controls.Add(this.bt_Number_2);
+            this.Controls.Add(this.bt_Number_1);
+            this.Controls.Add(this.lb_Numero);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvCandidatos);
@@ -121,7 +270,6 @@
             this.Text = "Form_Votacao_Interativa";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidatos)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -132,7 +280,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btVotar;
-        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Label lb_Numero;
+        private System.Windows.Forms.Button bt_Number_1;
+        private System.Windows.Forms.Button bt_Number_2;
+        private System.Windows.Forms.Button bt_Number_3;
+        private System.Windows.Forms.Button bt_Number_6;
+        private System.Windows.Forms.Button bt_Number_5;
+        private System.Windows.Forms.Button bt_Number_4;
+        private System.Windows.Forms.Button bt_Number_9;
+        private System.Windows.Forms.Button bt_Number_8;
+        private System.Windows.Forms.Button bt_Number_7;
+        private System.Windows.Forms.Button bt_Votar;
+        private System.Windows.Forms.Button bt_Number_0;
+        private System.Windows.Forms.Button bt_Apagar;
     }
 }

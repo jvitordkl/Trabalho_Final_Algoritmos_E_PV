@@ -102,6 +102,12 @@
     <Compile Include="Forms\Form_Votacao_Interativa.Designer.cs">
       <DependentUpon>Form_Votacao_Interativa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Resultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Resultado.Designer.cs">
+      <DependentUpon>Resultado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Candidato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Votacao_Interativa.resx">
       <DependentUpon>Form_Votacao_Interativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Resultado.resx">
+      <DependentUpon>Resultado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

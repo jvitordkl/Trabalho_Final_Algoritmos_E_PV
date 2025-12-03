@@ -37,3 +37,4 @@ C:\Users\Vitor\Desktop\Programacao\Atividade_Final\bin\Debug\System.Numerics.Vec
 C:\Users\Vitor\Desktop\Programacao\Atividade_Final\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Vitor\Desktop\Programacao\Atividade_Final\obj\Debug\Atividad.666851DA.Up2Date
 C:\Users\Vitor\Desktop\Programacao\Atividade_Final\obj\Debug\Atividade_Final.Forms.Form_Votacao_Interativa.resources
+C:\Users\Vitor\Desktop\Programacao\Atividade_Final\obj\Debug\Atividade_Final.Forms.Resultado.resources
