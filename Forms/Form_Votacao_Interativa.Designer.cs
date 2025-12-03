@@ -46,6 +46,7 @@
             this.bt_Votar = new System.Windows.Forms.Button();
             this.bt_Number_0 = new System.Windows.Forms.Button();
             this.bt_Apagar = new System.Windows.Forms.Button();
+            this.bt_Encerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -244,12 +245,24 @@
             this.bt_Apagar.UseVisualStyleBackColor = false;
             this.bt_Apagar.Click += new System.EventHandler(this.bt_Apagar_Click);
             // 
+            // bt_Encerrar
+            // 
+            this.bt_Encerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Encerrar.Location = new System.Drawing.Point(520, 398);
+            this.bt_Encerrar.Name = "bt_Encerrar";
+            this.bt_Encerrar.Size = new System.Drawing.Size(188, 40);
+            this.bt_Encerrar.TabIndex = 18;
+            this.bt_Encerrar.Text = "ENCERRAR";
+            this.bt_Encerrar.UseVisualStyleBackColor = true;
+            this.bt_Encerrar.Click += new System.EventHandler(this.bt_Encerrar_Click);
+            // 
             // Form_Votacao_Interativa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 453);
+            this.Controls.Add(this.bt_Encerrar);
             this.Controls.Add(this.bt_Votar);
             this.Controls.Add(this.bt_Number_0);
             this.Controls.Add(this.bt_Apagar);
@@ -293,5 +306,6 @@
         private System.Windows.Forms.Button bt_Votar;
         private System.Windows.Forms.Button bt_Number_0;
         private System.Windows.Forms.Button bt_Apagar;
+        private System.Windows.Forms.Button bt_Encerrar;
     }
 }

@@ -13,5 +13,6 @@ namespace Atividade_Final.Models
         public string nome { get; set; }
         public string apelido { get; set; }
         public string partido { get; set; }
+        public int voto { get; set; }
     }
 }

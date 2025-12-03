@@ -96,17 +96,17 @@
     <Compile Include="Forms\Form_Cadastrar_Candidato.Designer.cs">
       <DependentUpon>Form_Cadastrar_Candidato.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form_Resultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Resultado.Designer.cs">
+      <DependentUpon>Form_Resultado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form_Votacao_Interativa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form_Votacao_Interativa.Designer.cs">
       <DependentUpon>Form_Votacao_Interativa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Resultado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Resultado.Designer.cs">
-      <DependentUpon>Resultado.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Candidato.cs" />
     <Compile Include="Program.cs" />
@@ -117,11 +117,11 @@
     <EmbeddedResource Include="Forms\Form_Cadastrar_Candidato.resx">
       <DependentUpon>Form_Cadastrar_Candidato.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Resultado.resx">
+      <DependentUpon>Form_Resultado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Votacao_Interativa.resx">
       <DependentUpon>Form_Votacao_Interativa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Resultado.resx">
-      <DependentUpon>Resultado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,6 +131,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -146,6 +147,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\trash.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

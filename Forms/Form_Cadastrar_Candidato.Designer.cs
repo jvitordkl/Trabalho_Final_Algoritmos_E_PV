@@ -38,13 +38,12 @@
             this.txt_Apelido = new System.Windows.Forms.TextBox();
             this.txt_Numero = new System.Windows.Forms.TextBox();
             this.dgv_Candidato = new System.Windows.Forms.DataGridView();
-            this.bt_Salvar = new System.Windows.Forms.Button();
-            this.bt_Deletar = new System.Windows.Forms.Button();
-            this.bt_Limpar = new System.Windows.Forms.Button();
             this.numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome_completo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apelido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bt_Salvar = new System.Windows.Forms.Button();
+            this.bt_Limpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Candidato)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,41 +144,6 @@
             this.dgv_Candidato.Size = new System.Drawing.Size(770, 209);
             this.dgv_Candidato.TabIndex = 9;
             // 
-            // bt_Salvar
-            // 
-            this.bt_Salvar.BackColor = System.Drawing.Color.Chartreuse;
-            this.bt_Salvar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Salvar.Location = new System.Drawing.Point(680, 397);
-            this.bt_Salvar.Name = "bt_Salvar";
-            this.bt_Salvar.Size = new System.Drawing.Size(108, 41);
-            this.bt_Salvar.TabIndex = 10;
-            this.bt_Salvar.Text = "SALVAR";
-            this.bt_Salvar.UseVisualStyleBackColor = false;
-            this.bt_Salvar.Click += new System.EventHandler(this.bt_Salvar_Click);
-            // 
-            // bt_Deletar
-            // 
-            this.bt_Deletar.BackColor = System.Drawing.Color.Red;
-            this.bt_Deletar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Deletar.Location = new System.Drawing.Point(566, 397);
-            this.bt_Deletar.Name = "bt_Deletar";
-            this.bt_Deletar.Size = new System.Drawing.Size(108, 41);
-            this.bt_Deletar.TabIndex = 11;
-            this.bt_Deletar.Text = "DELETAR";
-            this.bt_Deletar.UseVisualStyleBackColor = false;
-            // 
-            // bt_Limpar
-            // 
-            this.bt_Limpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bt_Limpar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Limpar.Location = new System.Drawing.Point(452, 397);
-            this.bt_Limpar.Name = "bt_Limpar";
-            this.bt_Limpar.Size = new System.Drawing.Size(108, 41);
-            this.bt_Limpar.TabIndex = 12;
-            this.bt_Limpar.Text = "LIMPAR";
-            this.bt_Limpar.UseVisualStyleBackColor = false;
-            this.bt_Limpar.Click += new System.EventHandler(this.bt_Limpar_Click);
-            // 
             // numero
             // 
             this.numero.HeaderText = "NUMERO";
@@ -208,6 +172,30 @@
             this.partido.Name = "partido";
             this.partido.Width = 125;
             // 
+            // bt_Salvar
+            // 
+            this.bt_Salvar.BackColor = System.Drawing.Color.Chartreuse;
+            this.bt_Salvar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Salvar.Location = new System.Drawing.Point(680, 397);
+            this.bt_Salvar.Name = "bt_Salvar";
+            this.bt_Salvar.Size = new System.Drawing.Size(108, 41);
+            this.bt_Salvar.TabIndex = 10;
+            this.bt_Salvar.Text = "SALVAR";
+            this.bt_Salvar.UseVisualStyleBackColor = false;
+            this.bt_Salvar.Click += new System.EventHandler(this.bt_Salvar_Click);
+            // 
+            // bt_Limpar
+            // 
+            this.bt_Limpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bt_Limpar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Limpar.Location = new System.Drawing.Point(566, 397);
+            this.bt_Limpar.Name = "bt_Limpar";
+            this.bt_Limpar.Size = new System.Drawing.Size(108, 41);
+            this.bt_Limpar.TabIndex = 12;
+            this.bt_Limpar.Text = "LIMPAR";
+            this.bt_Limpar.UseVisualStyleBackColor = false;
+            this.bt_Limpar.Click += new System.EventHandler(this.bt_Limpar_Click);
+            // 
             // Form_Cadastrar_Candidato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -215,7 +203,6 @@
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bt_Limpar);
-            this.Controls.Add(this.bt_Deletar);
             this.Controls.Add(this.bt_Salvar);
             this.Controls.Add(this.dgv_Candidato);
             this.Controls.Add(this.txt_Numero);
@@ -248,7 +235,6 @@
         private System.Windows.Forms.TextBox txt_Numero;
         private System.Windows.Forms.DataGridView dgv_Candidato;
         private System.Windows.Forms.Button bt_Salvar;
-        private System.Windows.Forms.Button bt_Deletar;
         private System.Windows.Forms.Button bt_Limpar;
         private System.Windows.Forms.DataGridViewTextBoxColumn numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_completo;

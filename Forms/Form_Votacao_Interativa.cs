@@ -44,32 +44,12 @@ namespace Atividade_Final.Forms
             Habilitar();
         }
 
-        private void btVotar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Adicionar_Numero(string digito)
         {
             string numero = lb_Numero.Text.ToString();
             numero = numero + digito;
             lb_Numero.Text = numero;
             Habilitar();
-            /*
-            if(numero.Length == 0)
-            {
-                numero = "";
-                numero = numero + digito;
-                lb_Numero.Text = numero;
-            }
-            else
-                if (numero.Length > 0)
-                {
-                    numero = numero + digito;
-                    lb_Numero.Text = numero;
-                }
-            Habilitar();
-            */
         }
 
         private void Habilitar()
@@ -151,18 +131,44 @@ namespace Atividade_Final.Forms
             var pasta = new XLWorkbook("C:\\Users\\Vitor\\Desktop\\Programacao\\Atividade_Final\\candidatos.xlsx");
             var plan1 = pasta.Worksheet(1);
 
-            foreach (var escolhido in lista_Candidato)
+            string digitado = lb_Numero.Text;
+            if(digitado == "00")       //Se o número digitado for igual a 00 o voto é em branco
             {
-                if (escolhido.numero == Convert.ToInt32(lb_Numero.Text))
+                int votos_brancos = Convert.ToInt32(plan1.Cell(1, 8).Value.ToString());
+                votos_brancos = votos_brancos + 1;
+                plan1.Cell(1, 8).Value = votos_brancos.ToString();
+                pasta.Save();
+            }
+            else
+                if((lista_Candidato.Any(x => x.numero.ToString() == digitado)) == false) // Verifica se o número digitado existe na lista
+                                                                              // de candidatos, se não existe é considerado nulo
+            {
+                int votos_nulos = Convert.ToInt32(plan1.Cell(1, 9).Value.ToString());
+                votos_nulos = votos_nulos + 1;
+                plan1.Cell(1, 9).Value = votos_nulos.ToString();
+                pasta.Save();
+            }
+            else   // Caso ele não entre na validação anterior significa que o número existe na lista dos candidatos, logo atribuirá o voto
+                   // a ele
+            {
+                foreach (var escolhido in lista_Candidato)
                 {
-                    int posicao = escolhido.Id + 1;
-                    int qtdVotos = Convert.ToInt32(plan1.Cell(posicao, 6).Value.ToString());
-                    plan1.Cell(posicao, 6).Value = qtdVotos + 1;
-                    pasta.Save();
+                    if (escolhido.numero == Convert.ToInt32(lb_Numero.Text))
+                    {
+                        int posicao = escolhido.Id + 1;
+                        int qtdVotos = Convert.ToInt32(plan1.Cell(posicao, 6).Value.ToString());
+                        plan1.Cell(posicao, 6).Value = qtdVotos + 1;
+                        pasta.Save();
+                    }
                 }
             }
+                lb_Numero.Text = "";
+        }
 
-            lb_Numero.Text = "";
+        private void bt_Encerrar_Click(object sender, EventArgs e)
+        {
+            Form_Resultado form = new Form_Resultado();
+            form.ShowDialog();
         }
 
     }
