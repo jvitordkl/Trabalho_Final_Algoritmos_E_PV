@@ -23,7 +23,7 @@ namespace Atividade_Final.Forms
 
             int votos_validos = 0;
 
-            var pasta = new XLWorkbook("C:\\Users\\Vitor\\Desktop\\Programacao\\Atividade_Final\\candidatos.xlsx");
+            var pasta = new XLWorkbook("..\\..\\candidatos.xlsx");
             var plan1 = pasta.Worksheet(1);
             int qtdLinhas = plan1.RowsUsed().Count();
             int linhaLivre = qtdLinhas + 1;

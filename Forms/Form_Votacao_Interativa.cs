@@ -18,7 +18,7 @@ namespace Atividade_Final.Forms
         public Form_Votacao_Interativa()
         {
             InitializeComponent();
-            var pasta = new XLWorkbook("C:\\Users\\Vitor\\Desktop\\Programacao\\Atividade_Final\\candidatos.xlsx");
+            var pasta = new XLWorkbook("..\\..\\candidatos.xlsx");
             var plan1 = pasta.Worksheet(1);
             int qtdLinhas = plan1.RowsUsed().Count();
             int linhaLivre = qtdLinhas + 1;
@@ -128,7 +128,7 @@ namespace Atividade_Final.Forms
 
         private void bt_Votar_Click(object sender, EventArgs e)
         {
-            var pasta = new XLWorkbook("C:\\Users\\Vitor\\Desktop\\Programacao\\Atividade_Final\\candidatos.xlsx");
+            var pasta = new XLWorkbook("..\\..\\candidatos.xlsx");
             var plan1 = pasta.Worksheet(1);
 
             string digitado = lb_Numero.Text;
