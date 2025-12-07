@@ -18,8 +18,26 @@ namespace Atividade_Final
         public Form1()
         {
             InitializeComponent();
+        }
 
-            var pasta = new XLWorkbook("C:\\Users\\Vitor\\Desktop\\Programacao\\Atividade_Final\\candidatos.xlsx");
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_Cadastrar_Candidato form = new Form_Cadastrar_Candidato();
+            form.ShowDialog();
+
+            Disponibilizar_Votacao();
+        }
+
+        private void bt_Votacao_Interativa_Click(object sender, EventArgs e)
+        {
+            Form_Votacao_Interativa form = new Form_Votacao_Interativa();
+            form.ShowDialog();
+        }
+
+
+        private void Resetar_Simulacao()
+        {
+            var pasta = new XLWorkbook("..\\..\\candidatos.xlsx");
             var plan1 = pasta.Worksheet(1);
             int qtdLinhas = plan1.RowsUsed().Count();
             int linhaLivre = qtdLinhas + 1;
@@ -40,18 +58,30 @@ namespace Atividade_Final
             }
 
             pasta.Save();
+
+            Disponibilizar_Votacao();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Disponibilizar_Votacao()
         {
-            Form_Cadastrar_Candidato form = new Form_Cadastrar_Candidato();
-            form.ShowDialog();
+            var pasta = new XLWorkbook("..\\..\\candidatos.xlsx");
+            var plan1 = pasta.Worksheet(1);
+            int qtdLinhas = plan1.RowsUsed().Count();
+            int linhaLivre = qtdLinhas + 1;
+
+            if (plan1.RowsUsed().Count() > 2)
+            {
+                bt_Votacao_Interativa.Enabled = true;
+            }
+            else
+            {
+                bt_Votacao_Interativa.Enabled = false;
+            }
         }
 
-        private void bt_Votacao_Interativa_Click(object sender, EventArgs e)
+        private void bt_Reset_Click(object sender, EventArgs e)
         {
-            Form_Votacao_Interativa form = new Form_Votacao_Interativa();
-            form.ShowDialog();
+            Resetar_Simulacao();
         }
     }
 }

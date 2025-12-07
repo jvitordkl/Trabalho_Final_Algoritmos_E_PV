@@ -162,7 +162,8 @@ namespace Atividade_Final.Forms
                     }
                 }
             }
-                lb_Numero.Text = "";
+            lb_Numero.Text = "";
+            bt_Apagar.Enabled = false;
         }
 
         private void bt_Encerrar_Click(object sender, EventArgs e)

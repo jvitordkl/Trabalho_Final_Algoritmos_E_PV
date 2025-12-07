@@ -104,6 +104,8 @@
             this.txt_Nome_Completo.Name = "txt_Nome_Completo";
             this.txt_Nome_Completo.Size = new System.Drawing.Size(600, 27);
             this.txt_Nome_Completo.TabIndex = 5;
+            this.txt_Nome_Completo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Nome_Completo_KeyUp);
+            this.txt_Nome_Completo.Leave += new System.EventHandler(this.txt_Nome_Completo_Leave);
             // 
             // txt_Partido
             // 
@@ -112,6 +114,8 @@
             this.txt_Partido.Name = "txt_Partido";
             this.txt_Partido.Size = new System.Drawing.Size(164, 27);
             this.txt_Partido.TabIndex = 6;
+            this.txt_Partido.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Partido_KeyUp);
+            this.txt_Partido.Leave += new System.EventHandler(this.txt_Partido_Leave);
             // 
             // txt_Apelido
             // 
@@ -120,6 +124,8 @@
             this.txt_Apelido.Name = "txt_Apelido";
             this.txt_Apelido.Size = new System.Drawing.Size(383, 27);
             this.txt_Apelido.TabIndex = 7;
+            this.txt_Apelido.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Apelido_KeyUp);
+            this.txt_Apelido.Leave += new System.EventHandler(this.txt_Apelido_Leave);
             // 
             // txt_Numero
             // 
@@ -128,6 +134,8 @@
             this.txt_Numero.Name = "txt_Numero";
             this.txt_Numero.Size = new System.Drawing.Size(381, 27);
             this.txt_Numero.TabIndex = 8;
+            this.txt_Numero.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Numero_KeyUp);
+            this.txt_Numero.Leave += new System.EventHandler(this.txt_Numero_Leave);
             // 
             // dgv_Candidato
             // 
