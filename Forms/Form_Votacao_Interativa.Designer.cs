@@ -47,6 +47,8 @@
             this.bt_Number_0 = new System.Windows.Forms.Button();
             this.bt_Apagar = new System.Windows.Forms.Button();
             this.bt_Encerrar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             this.dgvCandidatos.Name = "dgvCandidatos";
             this.dgvCandidatos.RowHeadersWidth = 51;
             this.dgvCandidatos.RowTemplate.Height = 24;
-            this.dgvCandidatos.Size = new System.Drawing.Size(394, 387);
+            this.dgvCandidatos.Size = new System.Drawing.Size(394, 281);
             this.dgvCandidatos.TabIndex = 0;
             // 
             // numero
@@ -256,12 +258,36 @@
             this.bt_Encerrar.UseVisualStyleBackColor = true;
             this.bt_Encerrar.Click += new System.EventHandler(this.bt_Encerrar_Click);
             // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 361);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(393, 31);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "VOTAR EM BRANCO: 00";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(13, 406);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(393, 32);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "VOTAR NULO: NUMERO INEXISTENTE";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form_Votacao_Interativa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(800, 453);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.bt_Encerrar);
             this.Controls.Add(this.bt_Votar);
             this.Controls.Add(this.bt_Number_0);
@@ -307,5 +333,7 @@
         private System.Windows.Forms.Button bt_Number_0;
         private System.Windows.Forms.Button bt_Apagar;
         private System.Windows.Forms.Button bt_Encerrar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }
