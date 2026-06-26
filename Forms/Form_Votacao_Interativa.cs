@@ -147,6 +147,15 @@ namespace Atividade_Final.Forms
                 votos_nulos = votos_nulos + 1;
                 plan1.Cell(1, 9).Value = votos_nulos.ToString();
                 pasta.Save();
+
+
+
+
+
+
+
+
+
             }
             else   // Caso ele não entre na validação anterior significa que o número existe na lista dos candidatos, logo atribuirá o voto
                    // a ele
